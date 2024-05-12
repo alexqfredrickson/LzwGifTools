@@ -1,5 +1,5 @@
 # LzwGifTools v0.1-alpha
-A C# LZW GIF compression library for .NET 4.5
+A C#-based LZW compression library for .NET 8.0
 
 ### A brief introduction
 So you've got a GIF file and you want to mess around with the image data. Well, the [gif89a spec](https://www.w3.org/Graphics/GIF/spec-gif89a.txt) mandates that GIF image data is compressed once using a special variation of [Lempel-Ziv-Welch](https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch) encoding (hereby referred to as LZW GIF), and compressed *again* using [variable-length encoding](https://en.wikipedia.org/wiki/Variable-width_encoding). Now you're doomed to months of scouring byzantine corners of the internet to unlock the secrets of once-living data scientists and mathematicians.  Until now!
