@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LzwGifTools
+﻿namespace LzwGifTools
 {
     /// <summary>
     /// Unpacks a code stream (variable-width decoding).

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace LzwGifTools
+﻿namespace LzwGifTools
 {
     /// <summary>
     /// Packs a code stream (variable-width encoding).
