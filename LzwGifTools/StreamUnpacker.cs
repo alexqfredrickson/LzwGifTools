@@ -11,7 +11,7 @@
 
         public List<int> Unpack(List<byte> packedBytes)
         {
-            List<int> codeStream = new List<int>();
+            List<int> codeStream = new();
 
             List<byte> tempPackedBytes = new List<byte>();
             tempPackedBytes.AddRange(packedBytes);
