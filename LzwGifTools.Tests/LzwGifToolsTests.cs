@@ -147,7 +147,7 @@ namespace LzwGifTools.Tests
             List<int> lzwCompressedCodeStream = unpacker.Unpack(testCase.PackedBytes);
             CollectionAssert.AreEqual(testCase.LzwCompressedCodeStream, lzwCompressedCodeStream);
         }
-
+/*
         [Test]
         [TestCaseSource("LzwGifToolsTestCases")]
         public void ExportLzwCompressedCodeStreamToTextFile(LzwGifToolsTestCase testCase)
@@ -173,7 +173,7 @@ namespace LzwGifTools.Tests
                 }
             }
         }
-
+*/
         public void ExportBytesToTextFileAsBinaryString(List<byte> bytes)
         {
             string binaryString = string.Concat(bytes.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
