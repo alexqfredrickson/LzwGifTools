@@ -9,9 +9,9 @@
 
         public List<byte> Pack(List<int> codeStream)
         {
-            List<byte> packedBytes = new List<byte>();
+            List<byte> packedBytes = new();
 
-            List<bool> bits = new List<bool>();
+            List<bool> bits = new();
 
             int currentCodeWidth = LzwMinimumCodeSize + 1;
             int codeCount = 0;

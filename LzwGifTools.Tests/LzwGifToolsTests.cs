@@ -5,10 +5,10 @@ namespace LzwGifTools.Tests
     public class LzwGifToolsTestCase
     {
         public byte LzwMinimumCodeSize;
-        public Dictionary<int, List<int>> GlobalColorTableExample = new Dictionary<int, List<int>>();
-        public List<int> LzwCompressedCodeStream = new List<int>();
-        public List<int> CodeStream = new List<int>();  // not lzw compressed; the codestream represents a simple bitmap with three colors 
-        public List<byte> PackedBytes = new List<byte>();
+        public Dictionary<int, List<int>> GlobalColorTableExample = new();
+        public List<int> LzwCompressedCodeStream = new();
+        public List<int> CodeStream = new();  // not lzw compressed; the codestream represents a simple bitmap with three colors 
+        public List<byte> PackedBytes = new();
 
         public LzwGifToolsTestCase() { }
     }

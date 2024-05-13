@@ -1,29 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LzwGifTools
+﻿namespace LzwGifTools
 {
     /// <summary>
     /// Compresses and packs an index stream.
     /// </summary>
     public class Encoder
     {
-        LzwCompressor lzwCompressor { get; set; }
-        StreamPacker streamPacker { get; set;}
+        LzwCompressor LzwCompressor { get; set; }
+        StreamPacker StreamPacker { get; set;}
 
         public List<byte> Encode(List<int> indexStream)
         {
-            List<int> codeStream = lzwCompressor.Compress(indexStream);
-            return streamPacker.Pack(codeStream);
+            List<int> codeStream = LzwCompressor.Compress(indexStream);
+            return StreamPacker.Pack(codeStream);
         }
 
         public Encoder(byte lzwMinimumCodeSize)
         {
-            lzwCompressor = new LzwCompressor(lzwMinimumCodeSize);
-            streamPacker = new StreamPacker(lzwMinimumCodeSize);
+            LzwCompressor = new LzwCompressor(lzwMinimumCodeSize);
+            StreamPacker = new StreamPacker(lzwMinimumCodeSize);
         }
     }
 }

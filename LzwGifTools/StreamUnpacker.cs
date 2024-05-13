@@ -7,7 +7,7 @@
     {
         byte LzwMinimumCodeSize { get; set; }
         int ClearCode { get; set; }
-        int EndOfInformationCode { get; set; }
+        int EndOfInformationCode { get; }
 
         public List<int> Unpack(List<byte> packedBytes)
         {
